@@ -11,6 +11,9 @@
 <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/owl.theme.default.min.css')}}">
 
+{{-- ---------- normalize  css ----------- --}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 {{-- -------- aos ------------- --}}
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 

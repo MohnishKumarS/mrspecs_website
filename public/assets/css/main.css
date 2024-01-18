@@ -1,111 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-*{
-  padding: 0;
-  margin: 0;
-  outline: none;
-  box-sizing: border-box;
+  @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
 }
 
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--dark-color);
-  background-color: white;
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: white;
 }
 
-html,body,#home-wrapper{
-  width: 100% !important;
-  height: 100% !important;
-  /* overflow: hidden; */
+html,
+body,
+#home-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+    /* overflow: hidden; */
 }
 
-:root{
-  --primary-color:#f7941e;
-  --dark-color:#121212;
-  --light-color:#f8f8f8;
+:root {
+    --primary-color: #f7941e;
+    --dark-color: #121212;
+    --light-color: #f8f8f8;
 }
 
-a{
-  text-decoration: none;
-  color: black;
-  transition: .4s all;;
+a {
+    text-decoration: none;
+    color: black;
+    transition: .4s all;
 }
 
-a:hover{
+a:hover {
     color: var(--primary-color);
 }
 
-.space-top{
-  height: 81px;
-}
-#home-wrapper{
- position: relative;
- /* background-color: black;
- padding: 1rem; */
-  z-index: 1;
-}
-.main-wrapper{
-  background-color: var(--dark-color);
-  padding: 0rem 1rem;
+.space-top {
+    height: 81px;
 }
 
-section{
-  background-color: white;
+#home-wrapper {
+    position: relative;
+    /* background-color: black;
+ padding: 1rem; */
+    z-index: 1;
+}
+
+.main-wrapper {
+    background-color: var(--dark-color);
+    padding: 0rem 1rem;
+}
+
+section {
+    background-color: white;
 
 }
 
 /* ----------- bUTTON -------------- */
-.btn-main{
-  outline: none;
-  display: inline-block;
-  padding: 6px 15px;
-  font-size: 16px;
-  font-weight: 600;
-  background-color: var(--primary-color);
-  color: rgb(255, 255, 255);
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 3px;
-  box-shadow: 0 0 0 1px black;
-  text-align: center;
-  text-transform: capitalize;
-  transform: scale(1);
-  transition: .2s all ease-in;
-}
-.btn-main:hover{
-  border: 3px solid rgb(0, 0, 0);
-  box-shadow: 0 0 0 0px black;
-  transform: scale(1.1);
-  color: var(--dark-color) !important;
+.btn-main {
+    outline: none;
+    display: inline-block;
+    padding: 6px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px black;
+    text-align: center;
+    text-transform: capitalize;
+    transform: scale(1);
+    transition: .2s all ease-in;
 }
 
-.btn-normal{
-  outline: none;
-  display: inline-block;
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-  padding: 7px 15px;
-  border: 2px solid var(--primary-color);
-  border-radius:3px;  
-  text-align: center;
-  transform: .3s all;
-
-}
-.btn-normal:hover{
-  border-color: #ffffff;
-  background-color: var(--primary-color);
-  color: var(--dark-color) !important;
+.btn-main:hover {
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: 0 0 0 0px black;
+    transform: scale(1.1);
+    color: var(--dark-color) !important;
 }
 
-   /* ---------- COMMON------------- */
+.btn-normal {
+    outline: none;
+    display: inline-block;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 7px 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 3px;
+    text-align: center;
+    transform: .3s all;
 
-   .sec-title {
+}
+
+.btn-normal:hover {
+    border-color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--dark-color) !important;
+}
+
+/* ---------- COMMON------------- */
+
+.sec-title {
     position: relative;
     font-size: 40px;
     text-transform: capitalize;
@@ -116,7 +126,7 @@ section{
     padding-top: 30px;
 }
 
-.sec-title.light{
+.sec-title.light {
     color: white;
 }
 
@@ -139,62 +149,68 @@ section{
 /* ============== MAIN PAGE= ==================== */
 
 /* ---------- breadcrumb ---------- */
-.breadcrumb .breadcrumb-item a{
+.breadcrumb .breadcrumb-item a {
     color: #888;
     text-transform: uppercase;
     font-style: italic;
     font-size: 13px;
 
-  }
-  .breadcrumb .breadcrumb-item.active{
+}
+
+.breadcrumb .breadcrumb-item.active {
     color: var(--primary-color);
     text-transform: uppercase;
     font-style: italic;
     font-size: 13px;
     font-weight: 600;
 
-  }
+}
 
-  /* ------------ single product --------- */
-  .single-pro{
-    .pro-title{
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    font-weight: normal; 
-      
-  }
-  .pro-price span:nth-child(1){
-    font-size: 1.1rem;
-    padding-right: .8rem;
-    text-decoration: line-through;
-    color: #777;
-  }
-  .pro-price span:nth-child(2){
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--primary-color);
-  }
-  .pro-disc{
-    font-size: .9rem;
-    font-weight: 500;
-    /* color: #777; */
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
-  .pro-disc span{
-    font-style: italic;
-    font-size: 1rem;
+/* ------------ single product --------- */
+.single-pro {
+    .pro-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        font-weight: normal;
 
-  }
-  .pro-content{
-    font-size: 1rem;
-    font-weight: 700;
-    color: #555;
-  }
-  }
+    }
 
-   /* ------------ review ------------ */
-   .reviews {
+    .pro-price span:nth-child(1) {
+        font-size: 1.1rem;
+        padding-right: .8rem;
+        text-decoration: line-through;
+        color: #777;
+    }
+
+    .pro-price span:nth-child(2) {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+
+    .pro-disc {
+        font-size: .9rem;
+        font-weight: 500;
+        /* color: #777; */
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    .pro-disc span {
+        font-style: italic;
+        font-size: 1rem;
+
+    }
+
+    .pro-content {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #555;
+    }
+}
+
+/* ------------ review ------------ */
+.reviews {
     /* position: relative; */
     padding: 3rem 0;
 }
@@ -326,9 +342,10 @@ section{
 
 
 /* ----------- contact ----------- */
-.our-contact{
+.our-contact {
     padding-top: 3rem;
 }
+
 .contact-wrap {
     padding: 15px;
     background-color: #fff;
@@ -448,19 +465,23 @@ section{
 
 .our-product {
     padding: 16rem 0 7rem 0;
-    background-color:var(--dark-color);
+    background-color: var(--dark-color);
 }
-.our-popular{
+
+.our-popular {
     padding: 5rem 0;
 }
-.all-products{
+
+.all-products {
     min-height: 100vh;
     padding: 2rem 0 5rem 0;
 }
-.view-product{
+
+.view-product {
     min-height: 100vh;
     padding: 2rem 0 5rem 0;
 }
+
 .product-wrap {
     position: relative;
     background: #fff;
@@ -530,6 +551,8 @@ section{
 .product__price .product__sell {
     font-weight: 800;
     padding-left: 10px;
+    font-size: 1.4rem;
+    
 }
 
 /* ----------- collections ------- */
@@ -659,107 +682,156 @@ section{
 }
 
 
-/* ------------- animations ----------- */
-/* .animateMove{
-    position: relative;
-} */
+/* ------------ Brands specs ------------- */
+.our-brands {
+    padding: 5rem 0 10rem 0;
 
-.animateMove .animate{
+    & .brands span {
+        background: #f6f6f6;
+        display: inline-flex;
+        justify-content: flex-end;
+        width: 150px;
+        height: 100px;
+        margin-bottom: 10px;
+        padding: 1rem;
+        border-radius: 4px;
+        transition: .5s all ease-in;
+
+        &:nth-child(2n) {
+            background: transparent;
+        }
+
+        &:hover img {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: grayscale(1);
+            opacity: .5;
+        }
+    }
+}
+
+/* ------------- animations ----------- */
+.animateMove {
+    position: relative;
+}
+
+.animateMove .animate {
     width: 50px;
     position: absolute;
     z-index: 2;
 }
-.animate:nth-child(1){
-  left: 20%;
-  top: 387%;
-  animation: move1 10s linear infinite alternate;
-}
-.animate:nth-child(2){
-  left: 20%;
-  top: 53%;
-  animation: move2 10s linear infinite alternate;
-}
-.animate:nth-child(3){
-  left: 50%;
-  top: 60%;
-  animation: move3 10s linear infinite alternate;
-}
-.animate:nth-child(4){
-  left: 79%;
-  top: 199%;
-  animation: move4 10s linear infinite alternate;
-}
-.animate:nth-child(5){
-  left: 20%;
-  top:120%;
-  animation: move5 10s linear infinite alternate;
+
+.animate:nth-child(1) {
+    left: 20%;
+    top: 387%;
+    animation: move1 10s linear infinite alternate;
 }
 
-@keyframes move1{
-  to{
-    transform: translate(100px,250px) scale(2,2) rotate(270deg);
-    
-  }
-}
-@-webkit-keyframes move1{
-  to{
-    transform: translate(100px,200px) scale(2,2) rotate(270deg);
-    
-  }
+.animate:nth-child(2) {
+    left: 20%;
+    top: 53%;
+    animation: move2 10s linear infinite alternate;
 }
 
-@keyframes move2{
-  to{
-    transform: translate(50px,-100px) skew(10deg) rotate(-90deg) ;
-  }
+.animate:nth-child(3) {
+    left: 50%;
+    top: 60%;
+    animation: move3 10s linear infinite alternate;
 }
-@-webkit-keyframes move2{
-  to{
-    transform: translate(50px,-100px) skew(10deg) rotate(-90deg) ;
-  }
+
+.animate:nth-child(4) {
+    left: 79%;
+    top: 199%;
+    animation: move4 10s linear infinite alternate;
 }
-@keyframes move3{
-  to{
-    transform: translate(-100px,-200px);
-    rotate: 60deg;
-  }
+
+.animate:nth-child(5) {
+    left: 20%;
+    top: 120%;
+    animation: move5 10s linear infinite alternate;
 }
-@-webkit-keyframes move3{
-  to{
-    transform: translate(-100px,-200px);
-    rotate: 60deg;
-  }
+
+@keyframes move1 {
+    to {
+        transform: translate(100px, 250px) scale(2, 2) rotate(270deg);
+
+    }
 }
-@keyframes move4{
-  to{
-   transform:  matrix(1, -0.3, 1, 1, -50, -150) rotate(45deg);
-  }
+
+@-webkit-keyframes move1 {
+    to {
+        transform: translate(100px, 200px) scale(2, 2) rotate(270deg);
+
+    }
 }
-@-webkit-keyframes move4{
-  to{
-   transform:  matrix(1, -0.3, 1, 1, -50, -150) rotate(45deg);
-  }
+
+@keyframes move2 {
+    to {
+        transform: translate(50px, -100px) skew(10deg) rotate(-90deg);
+    }
 }
-@keyframes move5{
-  50%{
-    transform: translate(-50px,-100px) rotate(45deg);
-  }
-  100%{
-    transform: translate(-100px,-200px) rotate(150deg);
-  }
+
+@-webkit-keyframes move2 {
+    to {
+        transform: translate(50px, -100px) skew(10deg) rotate(-90deg);
+    }
 }
-@-webkit-keyframes move5{
-  50%{
-    transform: translate(-50px,-100px) rotate(45deg);
-  }
-  100%{
-    transform: translate(-100px,-200px) rotate(150deg);
-  }
+
+@keyframes move3 {
+    to {
+        transform: translate(-100px, -200px);
+        rotate: 60deg;
+    }
+}
+
+@-webkit-keyframes move3 {
+    to {
+        transform: translate(-100px, -200px);
+        rotate: 60deg;
+    }
+}
+
+@keyframes move4 {
+    to {
+        transform: matrix(1, 0, 1, 1, -50, -150) rotate(45deg);
+    }
+}
+
+@-webkit-keyframes move4 {
+    to {
+        transform: matrix(1, 0, 1, 1, -50, -150) rotate(45deg);
+    }
+}
+
+@keyframes move5 {
+    50% {
+        transform: translate(-50px, -100px) rotate(45deg);
+    }
+
+    100% {
+        transform: translate(-100px, -200px) rotate(150deg);
+    }
+}
+
+@-webkit-keyframes move5 {
+    50% {
+        transform: translate(-50px, -100px) rotate(45deg);
+    }
+
+    100% {
+        transform: translate(-100px, -200px) rotate(150deg);
+    }
 }
 
 /* ----------- header -------------- */
 
-.navbar{
+.navbar {
     background-color: var(--dark-color) !important;
     color: white !important;
     /* padding: 20px; */
@@ -767,28 +839,33 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    border-bottom:1px solid rgb(51, 51, 51); 
+    border-bottom: 1px solid rgb(51, 51, 51);
     transition: 1s all ease-out;
     z-index: 100;
-  }
-  .social-icon{
+}
+
+.social-icon {
     font-size: 22px;
     padding-right: 10px;
     color: white;
-    transition:color .4s ease-in;
-  }
-  .social-icon:first-child:hover{
+    transition: color .4s ease-in;
+}
+
+.social-icon:first-child:hover {
     color: yellow;
-  }
-  .social-icon:nth-of-type(2):hover{
+}
+
+.social-icon:nth-of-type(2):hover {
     color: #1775eb
-  }
-  .social-icon:nth-child(3):hover{
+}
+
+.social-icon:nth-child(3):hover {
     color: #cc2779;
-  }
-  .social-icon:last-of-type:hover{
+}
+
+.social-icon:last-of-type:hover {
     color: #53cc63;
-  }
+}
 
 
 /* ----------- footer ------------- */
@@ -844,11 +921,48 @@ section{
     color: var(--light-color);
     font-size: 16px;
 }
-.designed .designed-brand{
+
+.designed .designed-brand {
     font-weight: 700;
     /* text-decoration: underline; */
     color: #1775eb;
 }
-.designed .designed-brand:hover{
+
+.designed .designed-brand:hover {
     color: var(--primary-color);
+}
+
+
+/* ----------- scrollbar design ----------- */
+
+/* Define the scrollbar track */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Set the width of the scrollbar */
+}
+
+/* Define the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    /* Set the color of the thumb */
+    border-radius: 5px;
+    /* Set the border radius of the thumb */
+}
+
+/* Define the scrollbar track piece */
+::-webkit-scrollbar-track {
+    background-color: white;
+    /* Set the color of the track */
+}
+
+/* Define the scrollbar corner */
+::-webkit-scrollbar-corner {
+    background-color: orange;
+    /* Set the color of the corner */
+}
+
+/* Define the scrollbar grip */
+::-webkit-scrollbar-grip {
+    background-color: red;
+    /* Set the color of the grip */
 }

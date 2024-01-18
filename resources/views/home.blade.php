@@ -298,11 +298,13 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Name</label>
-                                    <input type="text" class="form-control" name="name" required pattern="(?:[A-Za-z].*?){4}" title="Enter a valid names & atleast 4characters">
+                                    <input type="text" class="form-control" name="name" required
+                                        pattern="(?:[A-Za-z].*?){4}" title="Enter a valid names & atleast 4characters">
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Mobile</label>
-                                    <input type="text" class="form-control" name="mobile" required pattern="[1-9]{10}" title="Enter 10 digit mobile number">
+                                    <input type="text" class="form-control" name="mobile" required
+                                        pattern="[1-9]{10}" title="Enter 10 digit mobile number">
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Message</label>
@@ -402,38 +404,9 @@
 
     @push('style')
         <style>
-            /* ------------ Brands specs ------------- */
-            .our-brands {
-                padding: 5rem 0 10rem 0;
-
-                & .brands span {
-                    background: #f6f6f6;
-                    display: inline-flex;
-                    justify-content: flex-end;
-                    width: 150px;
-                    height: 100px;
-                    margin-bottom: 10px;
-                    padding: 1rem;
-                    border-radius: 4px;
-                    transition: .5s all ease-in;
-
-                    &:nth-child(2n) {
-                        background: transparent;
-                    }
-
-                    &:hover img {
-                        filter: grayscale(0);
-                        opacity: 1;
-                    }
-
-                    & img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: contain;
-                        filter: grayscale(1);
-                        opacity: .5;
-                    }
-                }
+            /* ------------- animations ----------- */
+            .animateMove {
+                position: initial !important;
             }
         </style>
     @endpush
@@ -521,9 +494,6 @@
             </div>
         </div>
     </section>
-
-
-  
 @endsection
 
 
@@ -531,8 +501,6 @@
 
 @push('script')
     <script>
-       
-
         // -------- navbar scroll -----------
         let prevScrollpos = window.pageYOffset;
         const navbar = document.getElementById('navbar');
