@@ -15,9 +15,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
--- Dumping database structure for mrspecs
-CREATE DATABASE IF NOT EXISTS `mrspecs` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `mrspecs`;
 
 -- Dumping structure for table mrspecs.brands
 CREATE TABLE IF NOT EXISTS `brands` (
@@ -152,7 +149,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   CONSTRAINT `products_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table mrspecs.products: ~13 rows (approximately)
+-- Dumping data for table mrspecs.products: ~14 rows (approximately)
 INSERT INTO `products` (`id`, `category_id`, `name`, `slug`, `image`, `original_price`, `selling_price`, `quantity`, `brand`, `shape`, `trending`, `popular`, `created_at`, `updated_at`) VALUES
 	(1, 2, 'asdddddddddddd', 'asdasdadasd', '78098.jpg,28619.jpg,98025.webp', 234, 34, 34, 'Prada', 'Rectangle', 0, 0, '2023-12-29 02:11:57', '2024-01-09 04:18:44'),
 	(2, 1, 'AISLIN Full-rim Frame Round Sunglasses For Men', 'buy-red-sunglasses-for-men-by-aislin', '60364.avif', 150, 100, 3, 'Gucci', '', 1, 0, '2023-12-29 02:33:50', '2023-12-29 02:33:50'),
