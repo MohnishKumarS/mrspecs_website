@@ -1,0 +1,17 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+    
+RewriteCond %{HTTP_HOST} ^shirt-inc\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://shirt-inc.com/$1 [R,L]
+
+RewriteRule ^collections/([0-9a-zA-Z_/%.-]+) shop.php
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+</IfModule>
